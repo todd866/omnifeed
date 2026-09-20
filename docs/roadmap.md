@@ -1,6 +1,6 @@
 # First milestones
 
-All implementation milestones are pending. This repository currently contains context and research only.
+The local storage foundation is implemented: content-addressed imports, a private SQLite catalog and idempotent usage events. The end-to-end product milestones below remain pending; TV and PaperLibrary integration plans are documented.
 
 ## 1. Establish the shared library
 

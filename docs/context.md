@@ -42,3 +42,7 @@ Ian strongly prefers avoiding Bluetooth, especially for audio. Omni playback use
 ## Confirmed hardware sequence
 
 Build a non-integrated external device into the QC35 audio-in jack first. Get the design working well, then investigate headphone integration. External prototype success does not require internal fit, shared charging or preserved calls.
+
+## Everything-app direction
+
+Omni is the shared home for personal media. Onto the TV should become its TV subsystem; PaperLibrary can supply books/papers and continued reading. Ian wants the feed to suggest changing activities—for example, continuing a book while he is infinite scrolling. Keep suggestions dismissible, based on private usage state and tied to real saved reading positions. These app integrations are planned, not completed.

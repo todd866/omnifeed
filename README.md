@@ -2,7 +2,11 @@
 
 **Omni** is a private personal media library and reader, with a companion audio client built into Ian’s Bose QC35 headphones.
 
-Status: project setup and feasibility research, 20 September 2026. No application, firmware, circuit, or deployment has been implemented yet.
+[Onto the TV](docs/onto-the-tv.md) is intended to become Omni’s TV playback subsystem, sharing media identity, channels and private usage history.
+
+[PaperLibrary and activity suggestions](docs/attention-and-reading.md) extend that shared home to books and papers—for example, offering to continue a book during a long scrolling session.
+
+Status, 20 September 2026: public engineering and private configuration repositories are established. A tested local storage foundation supports media imports and usage events. The feed UI, source integrations, firmware and hardware remain to be built.
 
 ## Two components
 
@@ -19,5 +23,6 @@ The app owns the library and discovery. The headphones own local playback. They 
 4. [App–headphone interface](shared/device-contract.md): draft sync and playback contract.
 5. [Software sources](software/research.md) and [hardware sources](hardware/research.md): evidence and unresolved questions.
 6. [Ground rules](docs/principles.md): FOSS, public development, self-hosting and ambitious media handling.
+7. [Private data setup](docs/private-data.md): local storage, repository separation and publication checks.
 
 Working name: Omnifeed; short name: Omni. Naming does not imply domain or trademark availability has been checked.
