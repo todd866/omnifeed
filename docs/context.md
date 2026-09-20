@@ -24,10 +24,10 @@ The motivation includes poor real-world phone battery endurance, heavyweight soc
 ## QC35 preferences
 
 - Replace micro-USB with USB-C; one connector charges the Bose and added player.
-- Keep Bose ANC, normal Bluetooth playback and calls if technically feasible.
+- Keep Bose ANC and provide an explicit switch between internal Omni playback and iPhone Bluetooth audio. Ian accepts losing call functionality; seamless incoming-call priority is not required.
 - Local music files and queues, autonomous Wi-Fi updates, and a phone remote using BLE where appropriate.
 - Reuse physical playback controls if feasible. A technician could assemble/install a reviewed design.
-- Internal analogue audio was discussed, but no injection point, detection bypass or call-priority mechanism has been verified.
+- Internal analogue audio was discussed, but no injection point or source-switching mechanism has been verified. Latest clarification: mutually exclusive Omni/iPhone modes are acceptable; simultaneous Bluetooth and internal playback is unnecessary.
 
 ## Still to establish
 

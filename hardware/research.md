@@ -5,7 +5,7 @@ Checked 20 September 2026. Sources establish starting points; they do not valida
 ## Evidence
 
 - [James Turton’s QC35 USB-C project](https://github.com/jamesturton/bose-qc35-usb-c) provides KiCad sources and fabrication files for a replacement daughterboard. Its author reports compatibility with QC35 I and II and preservation of charging/firmware USB functions. Fine-pitch assembly and housing modification are required. This is a connector-board precedent, not evidence that extra compute can be powered or charged safely through it. Inspect the upstream licence before copying design files.
-- [Bose QC35 wired-connection guidance](https://www.bose.co.nz/en_nz/support/articles/HC756/productCodes/qc35/article.html) says the 2.5 mm audio cable disables Bluetooth. Therefore a permanently connected AUX source does not meet the desired normal Bluetooth/call behaviour. Internal injection and call priority remain unproven. Test individual buttons rather than assuming all controls behave alike in wired mode.
+- [Bose QC35 wired-connection guidance](https://www.bose.co.nz/en_nz/support/articles/HC756/productCodes/qc35/article.html) says the 2.5 mm audio cable disables Bluetooth. Therefore a permanently connected AUX source prevents iPhone mode. The revised requirement allows mutually exclusive modes: investigate a deliberate source switch that restores normal Bluetooth mode. Automatic call priority is out of scope. Test individual buttons rather than assuming all controls behave alike in wired mode.
 - [iFixit partial teardown](https://www.ifixit.com/Teardown/Bose+QuietComfort+35+PARTIAL+Teardown/114932) shows multiple boards, delicate cables and battery connections. It is a contributor teardown, not an official service schematic; its battery capacity estimate is not a confirmed specification for this particular headset. Free volume, acoustic effects and thermal margin must be measured.
 
 ## Compute candidates, not purchase recommendations
@@ -21,7 +21,7 @@ Select the module using measured runtime, fit, heat, codec compatibility, openne
 
 1. Identify QC35 generation, board revision and firmware; record unmodified ANC, wired audio, Bluetooth, calls and button behaviour.
 2. Measure space without compromising drivers, microphone ports, seals, antenna placement or cable movement.
-3. Map the audio source-selection path. Determine whether an additional source can coexist with Bose Bluetooth at all, and how an incoming call is detected.
+3. Map the audio source-selection path. Test an explicit Omni/iPhone switch: isolate the inactive source, select local audio or restore Bluetooth mode, and measure reconnection delay, ANC behaviour and switching pops. Determine how cable detection is implemented before proposing any wiring. No simultaneous-source or call-detection requirement.
 4. Measure noise, volume range and channel balance; avoid assuming analogue injection bypasses every internal conversion.
 5. Review one- versus two-cell power architecture, protection, temperature sensing, USB-C input current and charging while operating. Do not parallel charger outputs or batteries by assumption.
 6. USB data needs its own topology: retaining Bose firmware data and adding computer USB cannot be achieved by simply wiring both devices to the same data pair.

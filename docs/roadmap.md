@@ -12,13 +12,13 @@ Test native audio/BLE candidates on Ian’s iPhone before relying on a PWA-only 
 
 ## 3. Prove a headphone client outside the earcups
 
-An external player downloads a small pack, verifies it and plays with the network disconnected. Test restart, full storage, interrupted download and stale manifest. AUX is acceptable for this prototype but does not establish simultaneous Bose Bluetooth/calls.
+An external player downloads a small pack, verifies it and plays with the network disconnected. Test restart, full storage, interrupted download and stale manifest. AUX is acceptable for this prototype. Add an explicit Omni/iPhone mode experiment; simultaneous Bose Bluetooth/calls are not required.
 
 ## 4. Resolve physical/electrical feasibility
 
 Identify exact QC35 and PCB revision. Measure available volume, battery condition, acoustic clearances, power in playback/control/sync/sleep and temperatures. Trace source selection and buttons. Review USB-C charging/data topology. Select compute and battery only after these measurements.
 
-Gate: no internal installation specification until audio coexistence, power, thermals, fit and charging are demonstrated. A separate add-on battery is an option, not a conclusion.
+Gate: no internal installation specification until source switching, power, thermals, fit and charging are demonstrated. A separate add-on battery is an option, not a conclusion.
 
 ## 5. Add one real social source
 

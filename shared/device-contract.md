@@ -27,4 +27,4 @@ PLAY resumes or starts the default locally playable shuffled channel. PAUSE, NEX
 
 Persist queue order, position and shuffle state across restart. Physical controls work without the phone. BLE and Wi-Fi commands must converge on the same player state machine rather than running competing queues.
 
-Incoming Bose call priority and return-to-music are required investigations, not implemented protocol guarantees. Local music mode must not claim successful call switching until bench tests prove it.
+Two source modes: OMNI (internal local player) and IPHONE (original Bose Bluetooth audio). An explicit switch selects the source; its physical/electrical implementation remains open. Switching to IPHONE pauses and saves the local queue. Returning to OMNI restores the queue ready for Play. Report actual source state; measure Bluetooth reconnection delay. Call functionality and automatic interruption/resume are not required.

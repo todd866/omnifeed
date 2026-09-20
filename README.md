@@ -7,7 +7,7 @@ Status: project setup and feasibility research, 20 September 2026. No applicatio
 ## Two components
 
 - [Software](software/README.md): collect, organise, search and consume social posts, articles, research, music and podcasts. Prepare content ahead of time for fast, offline use.
-- [Hardware](hardware/README.md): rebuild the QC35 with an autonomous music player, storage, Wi-Fi sync, phone control and one USB-C charging port.
+- [Hardware](hardware/README.md): rebuild the QC35 with an autonomous music player, storage, Wi-Fi sync, phone control, an Omni/iPhone source switch and one USB-C charging port.
 
 The app owns the library and discovery. The headphones own local playback. They should remain useful with the phone disconnected and Wi-Fi unavailable.
 
