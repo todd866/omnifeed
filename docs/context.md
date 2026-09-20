@@ -38,3 +38,7 @@ Earlier phone specifications, future OS references, battery projections and opti
 ## Latest transport preference
 
 Ian strongly prefers avoiding Bluetooth, especially for audio. Omni playback uses local files and an internal wired audio path. Prefer Wi-Fi for phone control; evaluate BLE only as an optional control fallback. Physical buttons must remain usable without networking. Investigate wired iPhone audio for iPhone mode; normal Bose Bluetooth may remain an optional fallback. No wired USB audio capability is assumed from the USB-C charging modification.
+
+## Confirmed hardware sequence
+
+Build a non-integrated external device into the QC35 audio-in jack first. Get the design working well, then investigate headphone integration. External prototype success does not require internal fit, shared charging or preserved calls.

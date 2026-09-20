@@ -2,6 +2,8 @@
 
 Goal: add an autonomous audio computer to a Bose QC35, controlled by the phone and synchronised directly with Omnifeed. Retain ANC where feasible, provide an explicit Omni/iPhone source switch, and replace micro-USB with one USB-C connector serving both systems. Call functionality and automatic call interruption are not requirements.
 
-Start externally: compute + storage + DAC → QC35 2.5 mm AUX input. This proves the software/audio client, not Bluetooth coexistence. Internal source switching, button reuse and charging integration require separate investigation. Test Bluetooth reconnection on return to iPhone mode; simultaneous source operation is unnecessary.
+Start externally: compute + storage + DAC → QC35 2.5 mm AUX input. This proves the software/audio client, not Bluetooth coexistence. Internal source switching, button reuse and charging integration require separate investigation. Prefer wired iPhone audio; test Bluetooth reconnection only if that optional fallback is retained. Simultaneous source operation is unnecessary.
 
 No parts list, circuit or soldering instructions are approved yet. See [research](research.md) and the [milestones](../docs/roadmap.md).
+
+Confirmed first build: a separate external Omni device plugged into the QC35 audio-in jack. Validate playback, Wi-Fi sync, offline use, phone/physical controls and power before designing earcup integration. Internal fitting and USB-C headset surgery are later phases.

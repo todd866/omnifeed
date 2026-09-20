@@ -10,7 +10,7 @@ Import a small supplied audio collection plus one RSS/podcast feed. Preserve sou
 
 Test native audio/BLE candidates on Ian’s iPhone before relying on a PWA-only design. Record locked/background playback, track transitions, interruptions, other media apps, offline start and reconnection. CarPlay is a separate follow-up.
 
-## 3. Prove a headphone client outside the earcups
+## 3. Build the external headphone client (confirmed first hardware scope)
 
 An external player downloads a small pack, verifies it and plays with the network disconnected. Test restart, full storage, interrupted download and stale manifest. AUX is acceptable for this prototype. Add an explicit Omni/iPhone mode experiment, prioritising a wired iPhone input; simultaneous Bose Bluetooth/calls are not required.
 
