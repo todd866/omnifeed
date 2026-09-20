@@ -12,7 +12,7 @@ Test native audio/BLE candidates on Ian’s iPhone before relying on a PWA-only 
 
 ## 3. Prove a headphone client outside the earcups
 
-An external player downloads a small pack, verifies it and plays with the network disconnected. Test restart, full storage, interrupted download and stale manifest. AUX is acceptable for this prototype. Add an explicit Omni/iPhone mode experiment; simultaneous Bose Bluetooth/calls are not required.
+An external player downloads a small pack, verifies it and plays with the network disconnected. Test restart, full storage, interrupted download and stale manifest. AUX is acceptable for this prototype. Add an explicit Omni/iPhone mode experiment, prioritising a wired iPhone input; simultaneous Bose Bluetooth/calls are not required.
 
 ## 4. Resolve physical/electrical feasibility
 
@@ -31,3 +31,5 @@ Compact reader/player, predictable preloading, offline packs and authenticated m
 ## Decisions waiting on evidence
 
 MCU vs Linux; one or two batteries; audio injection/switching topology; phone web/native split; hosted database; first full social adapter; source-specific offline playback; codec baseline; channel/library capacity; target runtime and weight.
+
+Transport experiment: benchmark direct local Wi-Fi controls under delayed/unavailable Internet, network changes and sleep/wake; compare optional BLE only if useful. Prove physical playback controls with radios off. Validate wired iPhone audio separately from USB-C charging.

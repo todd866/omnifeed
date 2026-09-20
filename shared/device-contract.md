@@ -27,4 +27,8 @@ PLAY resumes or starts the default locally playable shuffled channel. PAUSE, NEX
 
 Persist queue order, position and shuffle state across restart. Physical controls work without the phone. BLE and Wi-Fi commands must converge on the same player state machine rather than running competing queues.
 
-Two source modes: OMNI (internal local player) and IPHONE (original Bose Bluetooth audio). An explicit switch selects the source; its physical/electrical implementation remains open. Switching to IPHONE pauses and saves the local queue. Returning to OMNI restores the queue ready for Play. Report actual source state; measure Bluetooth reconnection delay. Call functionality and automatic interruption/resume are not required.
+Two source modes: OMNI (internal local player) and IPHONE (external iPhone audio; wired preferred, interface unselected). An explicit switch selects the source; its physical/electrical implementation remains open. Switching to IPHONE pauses and saves the local queue. Returning to OMNI restores the queue ready for Play. Report actual source state; measure source-switch delay and, if optional Bluetooth is used, its reconnection delay. Call functionality and automatic interruption/resume are not required.
+
+## Control transport priorities
+
+Prefer authenticated direct local Wi-Fi control when both devices can reach one another; the cloud must not be required for nearby Play/Next. Evaluate Wi-Fi setup, discovery, sleep/wake latency and power, plus away-from-home operation (hotspot or device access point, not yet selected). BLE may be an optional low-bandwidth control fallback, never a required audio transport. Physical controls remain the reliable offline baseline. Do not assume Wi-Fi is inherently more reliable without measurements.

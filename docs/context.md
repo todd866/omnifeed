@@ -24,7 +24,7 @@ The motivation includes poor real-world phone battery endurance, heavyweight soc
 ## QC35 preferences
 
 - Replace micro-USB with USB-C; one connector charges the Bose and added player.
-- Keep Bose ANC and provide an explicit switch between internal Omni playback and iPhone Bluetooth audio. Ian accepts losing call functionality; seamless incoming-call priority is not required.
+- Keep Bose ANC and provide an explicit switch between internal Omni playback and iPhone audio (wired preferred; transport to be investigated). Ian accepts losing call functionality; seamless incoming-call priority is not required.
 - Local music files and queues, autonomous Wi-Fi updates, and a phone remote using BLE where appropriate.
 - Reuse physical playback controls if feasible. A technician could assemble/install a reviewed design.
 - Internal analogue audio was discussed, but no injection point or source-switching mechanism has been verified. Latest clarification: mutually exclusive Omni/iPhone modes are acceptable; simultaneous Bluetooth and internal playback is unnecessary.
@@ -34,3 +34,7 @@ The motivation includes poor real-world phone battery endurance, heavyweight soc
 Exact QC35 generation/PCB revision and condition; usable earcup volume; acceptable extra weight; target playback hours; library size and required codecs; first source integrations; existing app/code reuse; Apple developer account/device constraints; installation budget.
 
 Earlier phone specifications, future OS references, battery projections and optimistic build-time estimates are not project facts.
+
+## Latest transport preference
+
+Ian strongly prefers avoiding Bluetooth, especially for audio. Omni playback uses local files and an internal wired audio path. Prefer Wi-Fi for phone control; evaluate BLE only as an optional control fallback. Physical buttons must remain usable without networking. Investigate wired iPhone audio for iPhone mode; normal Bose Bluetooth may remain an optional fallback. No wired USB audio capability is assumed from the USB-C charging modification.

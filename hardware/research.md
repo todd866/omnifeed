@@ -21,10 +21,16 @@ Select the module using measured runtime, fit, heat, codec compatibility, openne
 
 1. Identify QC35 generation, board revision and firmware; record unmodified ANC, wired audio, Bluetooth, calls and button behaviour.
 2. Measure space without compromising drivers, microphone ports, seals, antenna placement or cable movement.
-3. Map the audio source-selection path. Test an explicit Omni/iPhone switch: isolate the inactive source, select local audio or restore Bluetooth mode, and measure reconnection delay, ANC behaviour and switching pops. Determine how cable detection is implemented before proposing any wiring. No simultaneous-source or call-detection requirement.
+3. Map the audio source-selection path. Test an explicit Omni/iPhone switch: isolate the inactive source, select local audio or iPhone input, and measure switching delay, ANC behaviour and switching pops. Determine how cable detection is implemented before proposing any wiring. No simultaneous-source or call-detection requirement.
 4. Measure noise, volume range and channel balance; avoid assuming analogue injection bypasses every internal conversion.
 5. Review one- versus two-cell power architecture, protection, temperature sensing, USB-C input current and charging while operating. Do not parallel charger outputs or batteries by assumption.
 6. USB data needs its own topology: retaining Bose firmware data and adding computer USB cannot be achieved by simply wiring both devices to the same data pair.
 7. Characterise playback, BLE control, sync and sleep power, then calculate runtime from measured usable battery energy.
 
 Use an external prototype before earcup integration. Preserve the original boards and document changes so the design remains serviceable and reproducible.
+
+## Prefer wired audio and Wi-Fi control
+
+Internal playback does not need Bluetooth audio. For iPhone mode, compare an external analogue input fed by an appropriate iPhone audio adapter with a dedicated USB Audio Class device path. USB-C is only a connector: the existing charging replacement does not establish USB audio support. USB host/device roles, enumeration, charging/data sharing, audio routing and phone compatibility require a bench prototype. Keep original Bose Bluetooth only as an optional fallback.
+
+For controls, compare Wi-Fi response/reconnect latency, discovery and power on home Wi-Fi and away from home. Evaluate whether a phone hotspot or headset access point creates unacceptable setup or phone-connectivity friction. BLE controls are acceptable but not the preferred dependency; physical buttons must work with both radios off.
